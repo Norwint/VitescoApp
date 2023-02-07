@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_17ssp"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/txtError1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/error"
+                    android:textColor="@color/error"
+                    android:paddingTop="2dp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="3.98"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableEnd="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/pseudonym"
+                android:textColorHint="#afafb4"
+                android:textSize="15sp"
+
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/passwordst" />
+
+                <TextView
+                    android:id="@+id/txtError2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/error"
+                    android:textColor="@color/error"
+                    android:paddingTop="2dp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="3.98"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableEnd="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+
+                android:textColorHint="#afafb4"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="textEnd"
+            android:text="@string/forgot"
+            android:textColor="@color/forgotPass" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:stateListAnimator="@null"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.widget.ScrollView>

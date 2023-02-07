@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/navigation_tabDashboard"
+            style="@style/tab_layout"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/tab_icon"
+                android:src="@drawable/tab_dashboard_icon"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/navigation_tabDashboardSelector"
+                style="@style/tab_triangle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navigation_tabLocation"
+            style="@style/tab_layout">
+
+            <ImageView
+                style="@style/tab_icon"
+                android:src="@drawable/dtc_icon" />
+
+            <ImageView
+                android:id="@+id/navigation_tabLocationSelector"
+                style="@style/tab_triangle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navigation_tabTracklog"
+            style="@style/tab_layout">
+
+            <ImageView
+                style="@style/tab_icon"
+                android:src="@drawable/tracklog_icon" />
+
+            <ImageView
+                android:id="@+id/navigation_tabTracklogSelector"
+                style="@style/tab_triangle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navigation_tabNotifications"
+            style="@style/tab_layout">
+
+            <ImageView
+                style="@style/tab_icon"
+                android:src="@drawable/outline_notifications_24" />
+
+            <ImageView
+                android:id="@+id/navigation_tabNotificationSelector"
+                style="@style/tab_triangle" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

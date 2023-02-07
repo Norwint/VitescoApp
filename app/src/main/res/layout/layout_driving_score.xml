@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="itemClickListener"
+            type="com.otcengineering.vitesco.utils.interfaces.OnClickListener" />
+
+        <variable
+            name="model"
+            type="com.otcengineering.vitesco.data.Tracklog" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/scoredata"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/realtimedata"
+        tools:layout_editor_absoluteX="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/foldable_layout_tech"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:onClick="@{()->model.foldableTech()}"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driving Technique"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/foldable_tech"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:rotation="@{model.getVisibilityRotationTech}"
+                android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout21"
+            android:layout_width="match_parent"
+            android:visibility="@{model.visibilityTech}"
+            android:layout_height="105dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0">
+
+            <LinearLayout
+                android:id="@+id/progressEcoLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/progressSafetyLinear"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progressEco"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    app:cpb_background_progressbar_color="@color/colorPrimaryProgress"
+                    app:cpb_background_progressbar_width="8dp"
+                    android:progress="@{model.ecoDrivingScoreProgress()}"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progress_max="100"
+                    app:cpb_progressbar_width="8dp"
+                    app:progress_color="@{model.colorEco}"
+                    app:cpb_round_border="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout20" />
+
+                <ImageView
+
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:rotation="@{model.rotationEco()}"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="@+id/progressSafety"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/progressSafety" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/progressSafetyLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/progressEcoLinear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progressSafety"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    app:cpb_background_progressbar_color="@color/colorPrimaryProgress"
+                    app:cpb_background_progressbar_width="8dp"
+                    android:progress="@{model.drivingScoreProgress()}"
+                    app:progress_color="@{model.color}"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="@color/colorPrimary"
+                    app:cpb_progressbar_width="8dp"
+                    app:cpb_round_border="false" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:rotation="@{model.rotationDriving}"
+                    app:layout_constraintBottom_toBottomOf="@+id/progressSafety"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/progressSafety" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drivingScore"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/progressSafetyLinear"
+                app:layout_constraintStart_toStartOf="@+id/progressSafetyLinear"
+                app:layout_constraintTop_toBottomOf="@+id/progressSafetyLinear" />
+
+            <TextView
+                android:id="@+id/txtSafety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:text="@{model.drivingScore()}"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/progressSafetyLinear"
+                app:layout_constraintStart_toStartOf="@+id/progressSafetyLinear"
+                app:layout_constraintTop_toTopOf="@+id/progressSafetyLinear"/>
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eco_driving"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/progressEcoLinear"
+                app:layout_constraintStart_toStartOf="@+id/progressEcoLinear"
+                app:layout_constraintTop_toBottomOf="@+id/progressEcoLinear" />
+
+            <TextView
+                android:id="@+id/txtEco"
+                android:layout_marginStart="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.ecoDrivingScore()}"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/progressEcoLinear"
+                app:layout_constraintStart_toStartOf="@+id/progressEcoLinear"
+                app:layout_constraintTop_toTopOf="@+id/progressEcoLinear" />
+
+            <TextView
+                android:id="@+id/averageEco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.ecoDrivingScoreAvg()}"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/progressEcoLinear"
+                app:layout_constraintStart_toStartOf="@+id/progressEcoLinear"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/averageDriving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.drivingScoreAvg()}"
+                android:textSize="12sp"
+                android:textColor="@color/check_button"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/foldable_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:onClick="@{()->model.foldable()}"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/safety_driving"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/foldable"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:rotation="@{model.visibilityRotation}"
+                android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/radars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="-80dp"
+            android:layout_gravity="center" >
+
+            <com.ultramegasoft.radarchart.RadarView
+                android:id="@+id/radar3"
+                android:layout_marginTop="10dp"
+                android:layout_width="360dp"
+                android:visibility="@{model.visibility}"
+                android:layout_height="wrap_content"
+                app:radar_add="@{model.maxRadarBkg}"
+                app:radar_circle_color="@{model.circleColor}"
+                app:radar_data="@{model.scoreBkg()}"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.ultramegasoft.radarchart.RadarView
+                android:id="@+id/radar"
+                android:layout_marginTop="10dp"
+                android:visibility="@{model.visibility}"
+                android:layout_width="360dp"
+                app:radar_add="@{model.maxRadar}"
+                app:radar_data="@{model.avgData()}"
+                app:radar_label_color="@{model.circleLabelEco()}"
+                app:radar_circle_color="@{model.circleColorEco}"
+                app:radar_polygon_color="@{model.circlePolygon}"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.ultramegasoft.radarchart.RadarView
+                android:visibility="@{model.visibility}"
+                android:id="@+id/radar2"
+                android:layout_marginTop="10dp"
+                android:layout_width="360dp"
+                app:radar_add="@{model.maxRadar}"
+                app:radar_data="@{model.scoreData()}"
+                app:radar_circle_color="@{model.circleColorEco}"
+                app:radar_polygon_color="@{model.circlePolygonEco()}"
+                app:radar_label_color="@{model.circleLabelEco()}"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="@{model.visibility}"
+            android:id="@+id/recyclerViewScore"
+            android:layout_width="match_parent"
+            app:data_recycler="@{model.getArray()}"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_drivingscore" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</layout>
+

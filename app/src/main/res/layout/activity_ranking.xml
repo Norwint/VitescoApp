@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.otcengineering.vitesco.data.Ranking" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.otcengineering.vitesco.view.components.TitleBar
+            android:id="@+id/ranking_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titlebar_left_button="@drawable/ic_round_arrow_back_24"
+            app:titlebar_title="Rankings" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:text="@string/daily"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:text="@string/weekly"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:text="@string/monthly"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/compatSpinner"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:dropDownWidth="220dp"
+                android:gravity="start|center_vertical"
+                android:entries="@array/rankings"
+                />
+
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:id="@+id/ranking_btnGoToMyPosition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="end|center_vertical"
+                android:text="@string/go_to_my_position"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/signup_sep" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ranking_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listItem="@layout/row_ranking" />
+    </LinearLayout>
+
+</layout>

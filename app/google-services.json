@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714556628266",
+    "project_id": "vitesco-783a5",
+    "storage_bucket": "vitesco-783a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714556628266:android:4a19d11e1ded8ca2a51253",
+        "android_client_info": {
+          "package_name": "com.otcengineering.vitesco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714556628266-qsdci8ke4c2cd0np848fn8en9sdalkba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADkAw9h2cCtbUOgOn9S7jlT8iKd7xFHBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714556628266-qsdci8ke4c2cd0np848fn8en9sdalkba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

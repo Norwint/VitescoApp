@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graph_type">
+        <item>ecuDistanceAccumulation</item>
+        <item>engDriverRequestTorque</item>
+        <item>accelerationPosition</item>
+        <item>engRpm</item>
+        <item>mtcReqEng</item>
+        <item>ecuFuelBlend</item>
+        <item>ecuThrottlePositionSensor</item>
+        <item>ecuBreakSwitch</item>
+        <item>ecuEcoLed</item>
+        <item>ecuGearRatioPosition</item>
+        <item>mtcModeDisplay</item>
+        <item>ecuBatteryVoltage</item>
+        <item>ecuIntakeAirTemp</item>
+        <item>ecuEngCoolantTemp</item>
+        <item>ecuDistanceBasedFuelCons</item>
+        <item>ecuFuelConsumption</item>
+        <item>rowFuelTankLevel</item>
+        <item>speed</item>
+    </string-array>
+
+    <string-array name="rankings">
+        <item>Eco Driving Score</item>
+        <item>Driving Score</item>
+    </string-array>
+</resources>

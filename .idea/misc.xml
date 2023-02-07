@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/drawable/ic_baseline_arrow_downward_24.xml" value="0.3075" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/drawable/ic_round_arrow_upward_24.xml" value="0.3075" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/drawable/ic_round_circle_green.xml" value="0.1395" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/drawable/progress_custom.xml" value="0.3465" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/drawable/tab_notifications_icon.xml" value="0.196" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_ble.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_freeze_frame.xml" value="0.33" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_home.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_login.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_ranking.xml" value="0.2997007268063275" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_splash.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/activity_status.xml" value="0.33" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/connectivity_fragment.xml" value="0.30012825994014536" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_connectivity.xml" value="0.33" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_dashboard.xml" value="0.2909958258795468" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_dtc_history.xml" value="0.29717180244829045" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_freeze_frame.xml" value="0.30012825994014536" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_notification_history.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_profile.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_tracklog.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_tracklog_history.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/fragment_vehicle_status.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/layout_driving_score.xml" value="0.264" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/menu_filter.xml" value="0.30012825994014536" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/menu_home.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/progress_custom.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_basic.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_dashboard.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_dashboard_filter.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_drivingscore.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_dtc.xml" value="0.29717180244829045" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_filter_code.xml" value="0.30012825994014536" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_push_notification.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_ranking.xml" value="0.2997007268063275" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_route.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/row_tracklog.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/otc_portatil/AndroidStudioProjects/VitescoAndroid/app/src/main/res/layout/view_navigation_tab.xml" value="0.3009833262077811" />
+        <entry key="app/src/main/res/drawable/circle_background.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_more_horiz.xml" value="0.187" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_dtc_history.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_notification_history.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_tracklog.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/row_dashboard.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/row_dtc.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/row_push_notification.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/row_route.xml" value="0.1853963216145833" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

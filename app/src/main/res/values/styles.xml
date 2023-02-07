@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Container.FullWidth">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Container.FullHeight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Container.FullWidthHeight">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="tab_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tab_icon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tab_triangle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:src">@drawable/menu_icons1</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Text.Headline" parent="Text"/>
+
+    <style name="Text.Headline.1" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_40ssp</item>
+        <item name="android:letterSpacing">-.15</item>
+    </style>
+
+    <style name="Text.Headline.2" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_30ssp</item>
+        <item name="android:letterSpacing">-0.05</item>
+    </style>
+
+    <style name="Text.Headline.3" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_26ssp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Text.Headline.4" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_22ssp</item>
+        <item name="android:letterSpacing">0.025</item>
+    </style>
+
+    <style name="Text.Headline.5" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Text.Headline.6" parent="Text.Headline">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:letterSpacing">0.015</item>
+    </style>
+
+    <style name="Text.Title" parent="Text">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="Text.SubTitle" parent="Text"/>
+
+    <style name="Text.SubTitle.1" parent="Text.SubTitle">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing">0.015</item>
+    </style>
+
+    <style name="Text.SubTitle.2" parent="Text.SubTitle">
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Text.Body" parent="Text"/>
+
+    <style name="Text.Body.1" parent="Text.Body">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="Text.Body.2" parent="Text.Body">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:letterSpacing">0.025</item>
+    </style>
+
+    <style name="Text.Button" parent="Text">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="Text.Button.White" parent="Text.Button">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Caption" parent="Text">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="Text.Overline" parent="Text">
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:letterSpacing">.15</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2e500</color>
+    <color name="colorPrimaryDark">#BDB302</color>
+    <color name="colorWhite">#FEFEFE</color>
+    <color name="colorWhiteTrans">#6affffff</color>
+    <color name="error">#cf021b</color>
+    <color name="strokeButton">#9898b7</color>
+    <color name="forgotPass">#a9a9c3</color>
+    <color name="textButton">#d7233c</color>
+    <color name="signup_sep">#cecede</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="black_20_alpha">#33000000</color>
+    <color name="colorTexto">#737373</color>
+    <color name="colorBlue">#001E67</color>
+    <color name="check_button">#4E9BD3</color>
+    <color name="tab_shadow_start">#DADDE5</color>
+    <color name="tab_shadow_end">#0CDADDE5</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorGreen">#00ff90</color>
+    <color name="colorRed">#ff3030</color>
+    <color name="colorOrange">#FF8C00</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="background_card_1">#F1F1F1</color>
+    <color name="background_card_2">#E1E1E1</color>
+
+    <color name="colorLightGreen">#6ACD00</color>
+    <color name="colorPrimaryProgress">#EBE8B3</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>
